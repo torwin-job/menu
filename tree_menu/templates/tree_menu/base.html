@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>{% block title %}Древовидное меню{% endblock %}</title>
+    <style>
+        .menu {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+        .menu-item {
+            margin: 5px 0;
+        }
+        .submenu {
+            list-style: none;
+            padding-left: 20px;
+        }
+        .active > a {
+            font-weight: bold;
+            color: #007bff;
+        }
+        .menu-container {
+            margin: 20px;
+            padding: 15px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+    <div class="content">
+        {% block content %}{% endblock %}
+    </div>
+</body>
+</html> 

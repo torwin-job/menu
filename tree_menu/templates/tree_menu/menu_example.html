@@ -1,0 +1,18 @@
+{% extends "tree_menu/base.html" %}
+{% load menu_tags %}
+
+{% block title %}Пример меню{% endblock %}
+
+{% block content %}
+    <h1>Пример использования древовидного меню</h1>
+    
+    <div class="menu-container">
+        <h2>Главное меню</h2>
+        {% draw_menu 'Новое меню' %}
+    </div>
+    
+    <div class="menu-container">
+        <h2>Дополнительное меню</h2>
+        {% draw_menu 'footer_menu' %}
+    </div>
+{% endblock %} 
